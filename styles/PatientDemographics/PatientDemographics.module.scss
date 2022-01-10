@@ -1,0 +1,299 @@
+.wholeContainer {
+  padding: 32px;
+  .mainContainer {
+    .heading {
+      width: 242px;
+      height: 33px;
+      font-family: Avenir;
+      font-size: 24px;
+      color: #b13c94;
+      text-decoration: none solid rgb(177, 60, 148);
+    }
+    .FormWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .contactContainer {
+        width: 1053px;
+        height: 289px;
+        border-radius: 10px;
+        background-color: #dadada;
+        margin: 18px 0;
+        padding: 16px 72px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px 50px;
+        .wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 12px;
+          // grid-gap: 50px;
+
+          .isRequired:after {
+            content: " *";
+            color: red;
+          }
+          > input {
+            width: 283px;
+            //   height: 46px;
+            padding: 14px;
+            border: 1px solid #8c8c8c;
+            border-radius: 4px;
+            background-color: #ffffff;
+            background-size: cover;
+            font-family: Avenir;
+            font-size: 14px;
+            color: #121212;
+            text-decoration: none solid rgb(18, 18, 18);
+          }
+
+          .field:focus {
+            border: 1px solid blue;
+          }
+        }
+        .rightitem {
+          grid-column-start: 2;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 12px;
+          > input {
+            width: 283px;
+            //   height: 46px;
+            padding: 14px;
+            border: 1px solid #8c8c8c;
+            border-radius: 4px;
+            background-color: #ffffff;
+            background-size: cover;
+            font-family: Avenir;
+            font-size: 14px;
+            color: #121212;
+            text-decoration: none solid rgb(18, 18, 18);
+          }
+        }
+      }
+      .gridWrapper {
+        display: grid;
+        grid-template-columns: 1fr 0fr 1fr;
+        .addressContainer {
+          padding: 16px 28px;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 20px 50px;
+          .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            > label {
+              padding-right: 8px;
+            }
+            // grid-gap: 50px;
+
+            .isRequired:after {
+              content: " *";
+              color: red;
+            }
+            > input {
+              width: 360px;
+              //   height: 46px;
+              padding: 14px;
+              border: 1px solid #8c8c8c;
+              border-radius: 4px;
+              background-color: #ffffff;
+              background-size: cover;
+              font-family: Avenir;
+              font-size: 14px;
+              color: #121212;
+              text-decoration: none solid rgb(18, 18, 18);
+            }
+
+            .field:focus {
+              border: 1px solid blue;
+            }
+            // .statezip {
+            //   display: flex;
+            //   justify-content: space-between;
+            // }
+            > select {
+              // width: 132px;
+              //   height: 46px;
+              padding: 14px;
+              border: 1px solid #8c8c8c;
+              border-radius: 4px;
+              background-color: #ffffff;
+              background-size: cover;
+              font-family: Avenir;
+              font-size: 14px;
+              color: #121212;
+              text-decoration: none solid rgb(18, 18, 18);
+              > option {
+                font-size: 14px;
+              }
+            }
+          }
+          .statezip {
+            display: grid;
+            grid-template-columns: 1.06fr 1fr;
+            grid-gap: 0px 10px;
+            .wrapper {
+              display: flex;
+              .isRequired:after {
+                content: " *";
+                color: red;
+              }
+              > input {
+                width: 132px;
+                //   height: 46px;
+                padding: 14px;
+                border: 1px solid #8c8c8c;
+                border-radius: 4px;
+                background-color: #ffffff;
+                background-size: cover;
+                font-family: Avenir;
+                font-size: 14px;
+                color: #121212;
+                text-decoration: none solid rgb(18, 18, 18);
+              }
+              > select {
+                padding: 14px;
+                border: 1px solid #8c8c8c;
+                border-radius: 4px;
+                background-color: #ffffff;
+                background-size: cover;
+                font-family: Avenir;
+                font-size: 14px;
+                color: #121212;
+                text-decoration: none solid rgb(18, 18, 18);
+                > option {
+                  font-size: 14px;
+                }
+              }
+
+              .field:focus {
+                border: 1px solid blue;
+              }
+              // .statezip {
+              //   display: flex;
+              //   justify-content: space-between;
+              // }
+            }
+          }
+        }
+        > hr {
+          background-color: #666666;
+        }
+        .perosnalDetailsContainer {
+          padding: 16px 28px;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 20px 50px;
+          .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // grid-gap: 50px;
+
+            .isRequired:after {
+              content: " *";
+              color: red;
+            }
+            > input {
+              width: 360px;
+              height: 99px;
+              padding: 14px;
+              border: 1px solid #8c8c8c;
+              border-radius: 4px;
+              background-color: #ffffff;
+              background-size: cover;
+              font-family: Avenir;
+              font-size: 14px;
+              color: #121212;
+              text-decoration: none solid rgb(18, 18, 18);
+            }
+            > textarea {
+              width: 360px;
+              height: 99px;
+              padding: 14px;
+              border: 1px solid #8c8c8c;
+              border-radius: 4px;
+              background-color: #ffffff;
+              background-size: cover;
+              font-family: Avenir;
+              font-size: 14px;
+              color: #121212;
+              text-decoration: none solid rgb(18, 18, 18);
+            }
+
+            .field:focus {
+              border: 1px solid blue;
+            }
+            // .statezip {
+            //   display: flex;
+            //   justify-content: space-between;
+            // }
+            > select {
+              // width: 132px;
+              //   height: 46px;
+              width: 360px;
+              padding: 14px;
+              border: 1px solid #8c8c8c;
+              border-radius: 4px;
+              background-color: #ffffff;
+              background-size: cover;
+              font-family: Avenir;
+              font-size: 14px;
+              color: #121212;
+              text-decoration: none solid rgb(18, 18, 18);
+              > option {
+                font-size: 14px;
+              }
+            }
+          }
+          .wrapperNotes {
+            display: flex;
+            justify-content: space-between;
+            // grid-gap: 50px;
+
+            > textarea {
+              width: 360px;
+              height: 99px;
+              padding: 14px;
+              border: 1px solid #8c8c8c;
+              border-radius: 4px;
+              background-color: #ffffff;
+              background-size: cover;
+              font-family: Avenir;
+              font-size: 14px;
+              color: #121212;
+              text-decoration: none solid rgb(18, 18, 18);
+            }
+
+            .field:focus {
+              border: 1px solid blue;
+            }
+          }
+        }
+      }
+    }
+    .next {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 20px;
+      > button {
+        text-transform: none;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0em;
+        padding: 0px;
+        color: #696969;
+        font-size: 24px;
+      }
+    }
+  }
+}

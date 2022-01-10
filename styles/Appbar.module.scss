@@ -1,0 +1,59 @@
+.navbar {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .navbarLeft {
+    margin: 11px 0px 11px 23px;
+    > img {
+      width: 169px;
+      height: 59px;
+    }
+  }
+  .navbarCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > a {
+      margin: 17px;
+      color: rgba(0, 0, 0, 0.404);
+      > div button {
+        text-transform: none;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0em;
+        padding: 0px;
+        color: rgba(0, 0, 0, 0.404);
+      }
+    }
+    > a:hover {
+      color: #b13c94;
+    }
+  }
+  .navbarRight {
+    margin-right: 28px;
+    order: 1;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div > button {
+      text-transform: none;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0em;
+      padding: 0px;
+      color: black;
+      //   > span > svg {
+      //     justify-content: flex-start;
+      //   }
+    }
+  }
+}
